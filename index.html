@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel=" link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' "
+      href=""
+    />
+    <title>Portfolio Ranim</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+    <header>
+      <nav class="ongl">
+        <div class="pyramid-loader">
+          <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#Home">Home </a></li>
+          <li><a href="#About-Me">About Me</a></li>
+          <li><a href="#skills">Skills </a></li>
+          <li><a href="#projects">Projects </a></li>
+          <li><a href="#Contact">Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home" id="Home">
+      <div class="home-content">
+        <h1>Hi! I'm RANIM</h1>
+        <h3>Software Engineer</h3>
+        <p>
+          I'm an IT student with a fervent passion for exploring the depths of
+          technology.
+        </p>
+        <button class="botao" onclick="downloadCV()">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mysvg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Interface / Download">
+                <path
+                  id="Vector"
+                  d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                  stroke="#f1f1f1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <span class="texto">
+            Download cv 
+        </span>
+        </button>
+      </div>
+
+      <div class="home-img">
+        <img src="ranim.png" alt="" />
+      </div>
+    </section>
+    <script>
+      function downloadCV() {
+        const link = document.createElement("a");
+        link.href = "CV_ranim_abker.pdf"; // Remplacez par le chemin réel vers votre fichier PDF
+        link.download = "CV_ranim_abker.pdf"; // Nom du fichier pour le téléchargement
+        link.click();
+      }
+    </script>
+    <section class="about" id="About-Me">
+      <div class="about-img">
+        <div class="glowing-circle">
+          <span></span>
+          <span></span>
+          <div class="images">
+            <img src="ranim.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="heed">About <span>Me</span></h2>
+
+        <p>
+          I am passionate about exploring the dynamic world of information
+          technology, ager to learn and adapt. I am honing my skills in
+          programming, networking and problem-solving. I am excited to
+          contribute to the ever-evolving tech landscape and open to
+          collaboration and new challenges. I am on a journey to build a solid
+          foundation for a successful career in IT.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </section>
+    <section class="skill" id="skills">
+      <h1 class="ha">My skills</h1>
+      <div class="skills-row">
+        <div class="skills-column">
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JavaScript <span>50%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>Figma <span>85%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>Flutter <span>40%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main" id="projects">
+      <div class="content">
+        <div class="h"><h2>My projects</h2></div>
+        <div class="card-container">
+          <div class="card">
+            <h1 style="color: rgb(79, 80, 80)">Comming Soon</h1>
+          </div>
+
+          <div class="card">
+            <h1 style="color: rgb(79, 80, 80)">Comming Soon</h1>
+          </div>
+          <div class="card">
+            <h1 style="color: rgb(79, 80, 80)">Comming Soon</h1>
+          </div>
+          <div class="card">
+            <h1 style="color: rgb(79, 80, 80)">Comming Soon</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="white" id="Contact">
+      <div class="container">
+        <form>
+          <h1>Contact Us Form</h1>
+
+          <input type="text" id="firstName" placeholder="First Name" requi />
+
+          <input type="text" id="lastName" placeholder="Last Name" required />
+
+          <input type="email" id="email" placeholder="Email" required />
+
+          <input type="text" id="mobile" placeholder="Phone Number" required />
+          <textarea placeholder="Type Your Message Here..." required></textarea>
+          <div class="home-content">
+            <button>Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
