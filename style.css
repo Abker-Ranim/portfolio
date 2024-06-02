@@ -760,3 +760,23 @@ textarea::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
+/* Style par défaut pour les grands écrans */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 480px) {
+  .container {
+      flex-direction: column;
+      padding: 5px;
+  }
+}
